@@ -15,13 +15,13 @@ After downloading, install it using:
 	sudo apt-get install -f     # to fix any dependencies
 
 ## Start Splunk
-After installation, start Splunk by moving to its bin directory:
+After installation, move to Splunk bin directory so you can start Splunk:
 
 	cd /opt/splunk/bin
 
-Make sure firewalls ports are open to make the Splunk web interface available.  
+Make sure **firewalls ports are open** to **make the Splunk web interface available**.  
 
-Then start Splunk and accept the license and make Splunk automatically answer "yes" to all yes/no prompts during startup:
+Start Splunk and accept the license and make Splunk automatically answer "yes" to all yes/no prompts during startup:
 
 	sudo ./splunk start --accept-license --answer=yes
 

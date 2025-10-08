@@ -27,7 +27,18 @@ Start Splunk and accept the license and make Splunk automatically answer "yes" t
 	sudo ./splunk start --accept-license --answer=yes
 
 Enter your administrator username and password when prompted in the Terminal.  
-<img width="970" height="433" alt="image" src="https://github.com/user-attachments/assets/e39e638c-813b-451c-bafa-46ed9f0e23b5" />
+	
+	This appears to be your first time running this version of Splunk.
+	
+	Splunk software must create an administrator account during startup. Otherwise, you cannot log in.
+	Create credentials for the administrator account.
+	Characters do not appear on the screen when you type in credentials.
+	
+	Please enter an administrator username: 
+	Password must contain at least:
+	   * 8 total printable ASCII character(s).
+	Please enter a new password: 
+	Please confirm new password: 
 
 ## Log in to Splunk Enterprise
 Access the web interface at http://kali:8000 and log in with the admin credentials you create during startup.

@@ -27,7 +27,7 @@ Start Splunk and accept the license and make Splunk automatically answer "yes" t
 	sudo ./splunk start --accept-license --answer=yes
 
 Enter your administrator username and password when prompted in the Terminal.  
-<img width="1431" height="914" alt="image" src="https://github.com/user-attachments/assets/8c53c5b4-467e-4d8c-b5fa-f459dd2922d3" />
+<img width="970" height="433" alt="image" src="https://github.com/user-attachments/assets/e39e638c-813b-451c-bafa-46ed9f0e23b5" />
 
 ## Log in to Splunk Enterprise
 Access the web interface at http://kali:8000 and log in with the admin credentials you create during startup.

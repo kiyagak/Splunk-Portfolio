@@ -27,8 +27,7 @@ Start Splunk and accept the license and make Splunk automatically answer "yes" t
 
 ## Log in to Splunk Enterprise
 Access the web interface at http://kali:8000 and log in with the admin credentials you create during startup.
-
-<img width="1431" height="914" alt="image" src="https://github.com/user-attachments/assets/6473413b-03a3-49f1-9485-764c1e261974" />
+<img width="1431" height="914" alt="image" src="https://github.com/user-attachments/assets/f37ea09b-73dc-4427-b6df-d6104218f8c3" />
 <img width="1431" height="914" alt="image" src="https://github.com/user-attachments/assets/e97a32e9-e19d-4b5c-abda-ca817775ac19" />
 
 ## What I Learned

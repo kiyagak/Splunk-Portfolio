@@ -5,6 +5,7 @@ Documentation of my use of Splunk, one of the most popular and widely used SIEM 
 Let’s install Splunk Enterprise on Kali Linux, a Debian-based distribution of Linux and log in to access the web interface.  
 
 ## Download and Install Splunk Enterprise
+Open the Terminal. 
 You can directly download the Splunk Enterprise .deb package that is most suitable for Kali Linux (Debian-based) via wget with this command:
 
 	wget -O splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb "https://download.splunk.com/products/splunk/releases/9.3.0/linux/splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb"
@@ -24,6 +25,9 @@ Make sure **firewalls ports are open** to **make the Splunk web interface availa
 Start Splunk and accept the license and make Splunk automatically answer "yes" to all yes/no prompts during startup:
 
 	sudo ./splunk start --accept-license --answer=yes
+
+Enter your administrator username and password when prompted in the Terminal.  
+<img width="1431" height="914" alt="image" src="https://github.com/user-attachments/assets/8c53c5b4-467e-4d8c-b5fa-f459dd2922d3" />
 
 ## Log in to Splunk Enterprise
 Access the web interface at http://kali:8000 and log in with the admin credentials you create during startup.

@@ -1,7 +1,7 @@
 # Splunk-Portfolio
 Documentation of my use of Splunk, one of the most popular and widely used SIEM tools around.  It is a data platform that searches, monitors, and analyzes machine-generated data from almost any source, allowing real-time insights, visualization, alerting, and operational intelligence.  
 
-[Splunk Enterprise Installaton on AWS EC2 Ubuntu Instance:](https://github.com/kiyagak/Splunk-Portfolio/blob/main/EC2-Install.md) 
+[Splunk Enterprise Installaton on AWS EC2 Ubuntu Instance](https://github.com/kiyagak/Splunk-Portfolio/blob/main/EC2-Install.md) 
 
 ## Install Splunk Enterprise on Kali Linux
 Let’s install Splunk Enterprise on Kali Linux, a Debian-based distribution of Linux and log in to access the web interface.  

@@ -174,4 +174,6 @@ Find the public IPv4 address for your Splunk EC2 instance:
 
 Browse to the web interface.  For example, if your Splunk EC2 instance has a public IPv4 address of 8.8.8.8 you will browse to http://8.8.8.8:8000.  Sign in using your username and password:
 
+<img width="1386" height="890" alt="image" src="https://github.com/user-attachments/assets/e9fed983-497a-4762-a80a-c149fc169e1f" />
+
 You have logged into Splunk Enterprise within an AWS Ubuntu EC2 instance.  

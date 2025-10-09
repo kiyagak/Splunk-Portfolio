@@ -33,7 +33,8 @@ Create a new key pair:
 
 <img width="601" height="577" alt="image" src="https://github.com/user-attachments/assets/ebc3c3fc-bee5-4e38-8cb7-766460bce1d8" />
 
-RSA uses large keys, is slower, but is widely supported. Ed25519 uses smaller keys, is faster, more secure for modern apps like SSH, but is less backward-compatible.
+- RSA uses large keys, is slower, but is widely supported. 
+- Ed25519 uses smaller keys, is faster, more secure for modern apps like SSH, but is less backward-compatible.
 
 <img width="1280" height="346" alt="image" src="https://github.com/user-attachments/assets/83e5798b-becf-4e2b-94ec-5dfeb386afc2" />
 

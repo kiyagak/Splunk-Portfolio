@@ -1,6 +1,6 @@
 ## Objective
 
-I am going to install Splunk Enterprise on an AWS EC2 instance.  I also need to make the EC2 instance with the right system requirements so that Splunk Enterprise can work without error.  Network access controls must also be configured to allow Splunk Enterprise to work properly.  
+The goal is to install Splunk Enterprise on an AWS EC2 instance.  The EC2 instance needs the right system requirements so that Splunk Enterprise can work without error.  Network access controls must also be configured to allow Splunk Enterprise to work properly.  
 
 ## Install Splunk on AWS EC2 Ubuntu Instance
 
@@ -195,7 +195,7 @@ Browse to the web interface.  For example, if your Splunk EC2 instance has a pub
 
 <img width="1386" height="890" alt="image" src="https://github.com/user-attachments/assets/e9fed983-497a-4762-a80a-c149fc169e1f" />
 
-I logged into Splunk Enterprise within an AWS Ubuntu EC2 instance.  
+Successfully logged into Splunk Enterprise within an AWS Ubuntu EC2 instance.  
 
 ## What I Learned
 I learned how to create an AWS EC2 Ubuntu instance where I installed Splunk Enterprise.  I learned the minimum system requirements needed by Splunk Enterprise to run on an AWS EC2 instance.  EC2 instances require specific security group rules needed to allow Splunk Enterprise to function correctly.  The default inbound traffic rules do not allow Splunk's web interface to function.  A a result, an additional rule was made to allow TCP port 8000 traffic to come in from the Internet to gain access to the Splunk Enterprise web interface.  I also accessed the Splunk website to get the Splunk .deb package needed to install Splunk onto my Ubuntu EC2 instance.  

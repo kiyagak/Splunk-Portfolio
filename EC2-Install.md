@@ -19,35 +19,38 @@ Choose an instance type that gives you 2 vCPUs and at least 4GiB of memory:
 Create a new key pair:
 
 <img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/da96e928-31c9-4cdb-8d50-15a25017ec34" />
+
 <img width="601" height="577" alt="image" src="https://github.com/user-attachments/assets/ebc3c3fc-bee5-4e38-8cb7-766460bce1d8" />
+
 <img width="1280" height="346" alt="image" src="https://github.com/user-attachments/assets/83e5798b-becf-4e2b-94ec-5dfeb386afc2" />
-
-
-
-
 
 Click Connect to launch the instance:
 
+<img width="1365" height="658" alt="image" src="https://github.com/user-attachments/assets/4052b56a-d770-4515-bbc2-e087309b553e" />
 
-
+<img width="585" height="351" alt="image" src="https://github.com/user-attachments/assets/e4e2be3a-1b15-47fc-82ed-d64048385e27" />
 
 To make the Splunk web interface available, edit the inbound rules to allow TCP traffic from the Internet inbound to port 8000.
 
-
 Select the security group:
 
+<img width="1384" height="800" alt="image" src="https://github.com/user-attachments/assets/7308197c-9068-4919-bba1-77df76289d2c" />
 
 Edit the inbound rules:
 
-
+<img width="1012" height="335" alt="image" src="https://github.com/user-attachments/assets/6ca511ab-1b93-41ce-959f-accbc477ed89" />
 
 Allow TCP traffic from the Internet to inbound to port 8000 and click Save rules:
 
+<img width="1268" height="613" alt="image" src="https://github.com/user-attachments/assets/d903f316-8e5f-42fc-83e0-18acb9febb30" />
+
 Click the checkbox for your Splunk-Server EC2 instance and click Launch Instances:
 
+<img width="1384" height="423" alt="image" src="https://github.com/user-attachments/assets/37fc6242-adcc-4c1c-9bae-7a390b4b0610" />
 
 Create a Splunk account so you can copy the wget link to download the Splunk .deb package onto your Ubuntu AWS EC2 instance:
 
+<img width="1198" height="635" alt="image" src="https://github.com/user-attachments/assets/41f40c31-c8a1-4c15-a4e7-369c58c3fd53" />
 
 Install Splunk in your Splunk EC2 instance.   
 
@@ -167,6 +170,7 @@ You will have to get your EC2 instance's public IPv4 address to access the Splun
 
 Find the public IPv4 address for your Splunk EC2 instance:
 
+<img width="1384" height="643" alt="image" src="https://github.com/user-attachments/assets/3f069377-1361-49c9-a5ef-0c1ed10c1dfd" />
 
 Browse to the web interface.  For example, if your Splunk EC2 instance has a public IPv4 address of 8.8.8.8 you will browse to http://8.8.8.8:8000.  Sign in using your username and password:
 

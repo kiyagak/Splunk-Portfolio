@@ -16,6 +16,11 @@ Choose an instance type that gives you 2 vCPUs and at least 4GiB of memory:
 
 <img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/d45c0e1d-e37c-4aad-a887-d2dccdbcd802" />
 
+Ensure the security group rules have been selected:
+- Allow SSH traffic from anywhere (0.0.0.0/0)
+- Allow HTTPS traffic from the Internet
+- Allow HTTP traffic from the Internet
+
 Create a new key pair:
 
 <img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/da96e928-31c9-4cdb-8d50-15a25017ec34" />

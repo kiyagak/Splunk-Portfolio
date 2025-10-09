@@ -1,12 +1,18 @@
-Install Splunk on AWS EC2 Ubuntu Instance
+## Objective
 
-Create a Free AWS account:
+I am going to install Splunk Enterprise on an AWS EC2 instance.  I also need to make the EC2 instance with the right system requirements so that Splunk Enterprise can work without error.  Network access controls must also be configured to allow Splunk Enterprise to work properly.  
+
+## Install Splunk on AWS EC2 Ubuntu Instance
+
+Create a Free AWS account here:
 https://aws.amazon.com/free/
 
-Splunk system requirements based on AWS EC2 instances:
+Splunk Enterprise's system requirements based on AWS EC2 instances:
 - 2vCPUs
 - at least 4GB RAM
 - 30GiB of storage
+
+## Launch the Ubuntu EC2 Instance
 
 Launch an Ubuntu EC2 instance:
 
@@ -53,9 +59,13 @@ Click the checkbox for your Splunk-Server EC2 instance and click Launch Instance
 
 <img width="1384" height="423" alt="image" src="https://github.com/user-attachments/assets/37fc6242-adcc-4c1c-9bae-7a390b4b0610" />
 
+## Download the Splunk .deb Package
+
 Create a Splunk account so you can copy the wget link to download the Splunk .deb package onto your Ubuntu AWS EC2 instance:
 
 <img width="1198" height="635" alt="image" src="https://github.com/user-attachments/assets/41f40c31-c8a1-4c15-a4e7-369c58c3fd53" />
+
+## Install Splunk Enerprise on the Ubuntu EC2 Instance
 
 Install Splunk in your Splunk EC2 instance.   
 
@@ -169,6 +179,8 @@ Create a username and password to log in with:
 	If you get stuck, we're here to help.  
 	Look for answers here: http://docs.splunk.com
 
+## Find Your EC2 Instance's Public IPv4 Address
+
 You will have to get your EC2 instance's public IPv4 address to access the Splunk web interface:
 
 	The Splunk web interface is at http://[AWS EC2 instance public IP]:8000
@@ -177,8 +189,13 @@ Find the public IPv4 address for your Splunk EC2 instance:
 
 <img width="1384" height="643" alt="image" src="https://github.com/user-attachments/assets/3f069377-1361-49c9-a5ef-0c1ed10c1dfd" />
 
+## Access the Splunk Enterprise Web Interface
+
 Browse to the web interface.  For example, if your Splunk EC2 instance has a public IPv4 address of 8.8.8.8 you will browse to http://8.8.8.8:8000.  Sign in using your username and password:
 
 <img width="1386" height="890" alt="image" src="https://github.com/user-attachments/assets/e9fed983-497a-4762-a80a-c149fc169e1f" />
 
 You have logged into Splunk Enterprise within an AWS Ubuntu EC2 instance.  
+
+## What I Learned
+I learned how to create an AWS EC2 Ubuntu instance where I installed Splunk Enterprise.  I learned the minimum system requirements needed by Splunk Enterprise to run on an AWS EC2 instance.  EC2 instances require specific security group rules needed to allow Splunk Enterprise to function correctly.  The default inbound traffic rules do not allow Splunk's web interface to function.  A a result, an additional rule was made to allow TCP port 8000 traffic to come in from the Internet to gain access to the Splunk Enterprise web interface.  I also accessed the Splunk website to get the Splunk .deb package needed to install Splunk onto my Ubuntu EC2 instance.  

@@ -9,10 +9,14 @@ Splunk system requirements based on AWS EC2 instances:
 - 30GiB of storage
 
 Launch an Ubuntu EC2 instance:
+
 <img width="1384" height="800" alt="image" src="https://github.com/user-attachments/assets/cc222858-073a-431f-815f-bc36cc51d86e" />
 
 Choose an instance type that gives you 2 vCPUs and at least 4GiB of memory:
 
+<img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/d45c0e1d-e37c-4aad-a887-d2dccdbcd802" />
+<img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/da96e928-31c9-4cdb-8d50-15a25017ec34" />
+<img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/e1dc1ab7-6650-4eef-bce4-b9ee50601ece" />
 
 Create a new key pair:
 

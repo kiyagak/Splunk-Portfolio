@@ -8,8 +8,8 @@ Create a Free AWS account here:
 https://aws.amazon.com/free/
 
 Splunk Enterprise's system requirements based on AWS EC2 instances:
-- 2vCPUs
-- at least 4GB RAM
+- 2 vCPUs
+- at least 4GB of memory
 - 30GiB of storage
 
 ## Launch the Ubuntu EC2 Instance

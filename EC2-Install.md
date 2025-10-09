@@ -198,7 +198,7 @@ Browse to the web interface.  For example, if your Splunk EC2 instance has a pub
 
 <img width="1386" height="890" alt="image" src="https://github.com/user-attachments/assets/e9fed983-497a-4762-a80a-c149fc169e1f" />
 
-Successfully logged into Splunk Enterprise within an AWS Ubuntu EC2 instance.  
+This is what the web interface looks like after logging in to Splunk Enterprise within an AWS Ubuntu EC2 instance.  
 
 ## What I Learned
 I learned how to create an Ubuntu server on AWS EC2 and install Splunk Enterprise on it. I found out the minimum system requirements Splunk needs to run on EC2. To make Splunk work properly, the EC2 security settings must be adjusted because the default rules block Splunk’s web interface. So, I added a rule to allow internet traffic on TCP port 8000, which lets me access Splunk’s web interface. I also downloaded the Splunk .deb installation package from the official Splunk website to install it on my server.

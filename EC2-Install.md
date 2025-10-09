@@ -16,7 +16,7 @@ Choose an instance type that gives you 2 vCPUs and at least 4GiB of memory:
 
 <img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/d45c0e1d-e37c-4aad-a887-d2dccdbcd802" />
 <img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/da96e928-31c9-4cdb-8d50-15a25017ec34" />
-<img width="1385" height="800" alt="image" src="https://github.com/user-attachments/assets/e1dc1ab7-6650-4eef-bce4-b9ee50601ece" />
+<img width="601" height="577" alt="image" src="https://github.com/user-attachments/assets/ebc3c3fc-bee5-4e38-8cb7-766460bce1d8" />
 
 Create a new key pair:
 

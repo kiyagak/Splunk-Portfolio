@@ -1,5 +1,5 @@
 ## Objective
-The goal is to make Splunk ingest static data.  
+The goal is to make Splunk ingest static data on an AWS EC2 instance that has an Ubuntu operating system.  The data must be searchable and we must change the data fields to fields that are easily understood.  
 
 ## Download the Data Source
 

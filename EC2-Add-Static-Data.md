@@ -98,4 +98,69 @@ Click on **All Fields**:
 
 <img width="1102" height="717" alt="image" src="https://github.com/user-attachments/assets/ebd2c7c2-2436-4837-a650-038df61d902d" />
 
+<img width="1287" height="565" alt="image" src="https://github.com/user-attachments/assets/e49d55bf-b0ac-466a-aa2b-d4530aaaafb0" />
+
+Click the checkbox for the **Country** field to include it in the **SELECTED FIELDS**:
+
+<img width="1068" height="379" alt="image" src="https://github.com/user-attachments/assets/f92fb2f7-0092-4d7e-985d-8b2ef5f74871" />
+
+Click the x button just above the **Extract New Fields** button to close the dialog box and to show the Country field as part of the SELECTED FIELDS:
+
+<img width="1476" height="213" alt="image" src="https://github.com/user-attachments/assets/f9e7cc42-11cc-49c6-aa04-efd3ecbfdc93" />
+
+Click the **All Fields** button:
+
+<img width="610" height="386" alt="image" src="https://github.com/user-attachments/assets/7bae210f-c80e-4cde-b25e-ef3bb6bdad60" />
+
+Click on the **Extract New Fields** button to extract new fields:
+
+<img width="1256" height="330" alt="image" src="https://github.com/user-attachments/assets/7897d312-3a05-4d07-bf37-c0057f1afb71" />
+
+Select any event or row and click **Next**: 
+
+<img width="987" height="843" alt="image" src="https://github.com/user-attachments/assets/1a21954e-bd51-4601-b2f3-1b2c90589d40" />
+
+Delimiters vs. Regular Expression:
+
+- Splunk delimiter extraction is suited for structured data with consistent separators like commas or spaces, quickly isolating fields by splitting on these delimiters.
+- Regular expressions offer flexible pattern matching for unstructured or complex data, allowing custom and precise field extraction beyond simple delimiters.
+
+Select **Delimiter** as the method because the comma delimits each field or value within the comma-separated value file.  Click **Next**:
+
+<img width="987" height="667" alt="image" src="https://github.com/user-attachments/assets/47fc695e-9867-43e6-a3ee-4527a341b5ea" />
+
+Choose Comma as the Delimiter:
+
+Field names do not allow periods (.) or dashes (-).  
+
+Click each field name header to nename the fields:  
+- Rename field1 to Index
+- Rename field2 to ID_Org
+- Rename field3 to Company
+- Rename field4 to Website
+- Rename field5 to Country
+- Rename field6 to Description
+- Rename field7 to Year_Founded
+- Rename field8 to Industry
+- Rename field9 to Number_Employees
+
+<img width="1100" height="837" alt="image" src="https://github.com/user-attachments/assets/67598406-b370-4a5b-8585-4a1fab57b4f0" />
+
+<img width="1106" height="816" alt="image" src="https://github.com/user-attachments/assets/1d4701d0-3f29-4526-bd36-ee70a2ef4745" />
+
+<img width="1101" height="854" alt="image" src="https://github.com/user-attachments/assets/9a0c6f67-40c3-468e-aace-55e32a25ba40" />
+
+Click **Next**:
+
+<img width="1017" height="630" alt="image" src="https://github.com/user-attachments/assets/b62264cc-b1d0-4885-a6b4-e701a6abc320" />
+
+Name your report, then click **Finish**.  
+
+Click **Explore the field I just created in Search**:
+
+<img width="1010" height="359" alt="image" src="https://github.com/user-attachments/assets/cf9c18e2-2fd3-4b8a-9265-60577194a5e3" />
+
+You will see the fields in the left pane showing what they have been renamed to:
+
+<img width="1135" height="675" alt="image" src="https://github.com/user-attachments/assets/8f189caa-53d9-429b-b057-84ee0b354346" />
 

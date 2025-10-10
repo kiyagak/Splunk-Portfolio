@@ -50,6 +50,22 @@ The instance was launched successfully:
 
 <img width="509" height="290" alt="image" src="https://github.com/user-attachments/assets/5b174443-a2d4-48f1-a81a-fcea7ec87f51" />
 
+## Download the Splunk Universal Forwarder onto the Forwarder EC2 Instance
+
+Sign into Splunk and **copy the wget link** for the Linux 64-bit .deb package from [this page](https://www.splunk.com/en_us/download/universal-forwarder.html):
+
+	wget -O splunkforwarder-10.0.1-c486717c322b-linux-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/10.0.1/linux/splunkforwarder-10.0.1-c486717c322b-linux-amd64.deb"
+
+<img width="1214" height="728" alt="image" src="https://github.com/user-attachments/assets/63cc7d82-2ef7-477d-bfc1-7e1acc9c7aab" />
+
+Click the checkbox for the EC2 Ubuntu Forwarder instance and click **Connect** to connect to the EC2 Ubuntu Forwarder instance:
+
+<img width="711" height="293" alt="image" src="https://github.com/user-attachments/assets/fe2cf929-40fc-42f1-91ae-22b678ad75e6" />
+
+Click **Connect** once again:
+
+<img width="1206" height="687" alt="image" src="https://github.com/user-attachments/assets/4f1afe00-1623-4b65-afa8-d2a9cce5dd8c" />
+
 ## Ensure the Splunk service is Running
 
 ## Make an inputs.conf File for Splunk to Choose Log File(s) to Monitor

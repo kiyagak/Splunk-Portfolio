@@ -83,8 +83,8 @@ We will **monitor the syslog log file** located at /var/log/syslog.
 How inputs.conf should look like:
 
 	[monitor://</path/of/file/abc.txt>]
-	Disabled = 0
-	Index = <index_name>
+	disabled = 0
+	index = <index_name>
 
 Make the inputs.conf file using the vi editor to tell Splunk which file to monitor:
 	
@@ -94,12 +94,8 @@ Press I to enter insertable mode to add content to the file:
 
 	# Splunk will monitor the file located at /var/sys/syslog on the system's file system:
 	[monitor:///var/sys/syslog]
-	
-	# The stanza or the input is enabled:
-	Disabled = 0
-	
-	# This specifies the index where events from that particular input are stored:
-	Index = static-data
+	disabled = 0
+	index = static-data
 
 To save this file press the **ESC button** on your keyboard, then type in "**:wq**", then press the **ENTER button** on your keyboard.  
 
@@ -174,6 +170,59 @@ The receiving Splunk instance can now receive data by listening on port 9997:
 
 
 ## Restart Splunk Service on Forwarder(s)
+
+On your Splunk EC2 instance that is set up to forward data to the receiver restart Splunk.  
+
+
+Change to the directory where the Splunk executable script file is located: 
+
+	cd /opt/splunkforwarder/bin
+
+Restart Splunk:
+
+	./splunk restart
+	
+	Warning: Attempting to revert the SPLUNK_HOME ownership
+	Warning: Executing "chown -R splunkfwd:splunkfwd /opt/splunkforwarder"
+	Stopping splunkd...
+	Shutting down.  Please wait, as this may take a few minutes.
+
+	Stopping splunk helpers...
+
+	Done.
+	splunkd.pid doesn't exist...
+
+	Splunk> Like an F-18, bro.
+
+	Checking prerequisites...
+		Checking mgmt port [8089]: open
+	New certs have been generated in '/opt/splunkforwarder/etc/auth'.
+		Checking conf files for problems...
+		        Invalid key in stanza [monitor:///var/sys/syslog] in /opt/splunkforwarder/etc/system/local/inputs.conf, line 5: Disabled (value: 0).
+		        Invalid key in stanza [monitor:///var/sys/syslog] in /opt/splunkforwarder/etc/system/local/inputs.conf, line 8: Index (value: static-data).
+		        Your indexes and inputs configurations are not internally consistent. For more information, run 'splunk btool check --debug'
+		Done
+		Checking default conf files for edits...
+		Validating installed files against hashes from '/opt/splunkforwarder/splunkforwarder-10.0.1-c486717c322b-linux-amd64-manifest'
+		All installed files intact.
+		Done
+	All preliminary checks passed.
+
+	Starting splunk server daemon (splunkd)...  
+	Done
+
+## Verify That the Receiver Splunk Instance is Receiving Data
+
+Access to Splunk Enterprise web interface of the receiving Splunk EC2 Ubuntu instance.  Click **Apps**, then click **Search and Reporting**:
+
+<img width="348" height="340" alt="image" src="https://github.com/user-attachments/assets/d08cd8b4-7791-42ca-a6cb-5a7e9843f9f4" />
+
+Enter the following search string to verify that the receiver is receiving data from the forwarder:
+
+	index="static-data"
+
+<img width="1003" height="282" alt="image" src="https://github.com/user-attachments/assets/36cc29f6-d5a3-4848-aa6b-0446b35544e7" />
+
 
 
 

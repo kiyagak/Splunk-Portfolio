@@ -114,7 +114,7 @@ Change to the directory where the Splunk executable or script file is located:
 
 Start Splunk and accept the license:
 	
-	./splunk start --accept-license
+	./splunk start --accept-license --answer-yes
 
 	This appears to be your first time running this version of Splunk.
 

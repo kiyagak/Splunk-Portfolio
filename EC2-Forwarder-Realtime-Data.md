@@ -74,13 +74,46 @@ Run this command to see a detailed view about the log files:
 
 	ls -la
 
-We will monitor the syslog log file located at /var/log/syslog.  
+We will **monitor the syslog log file** located at /var/log/syslog.  
+
+
 
 ## Ensure the Splunk service is Running
 
 ## Make an inputs.conf File for Splunk to Choose Log File(s) to Monitor
 
+How inputs.conf should look like:
+
+	[monitor://</path/of/file/abc.txt>]
+	Disabled = 0
+	Index = <index_name>
+
+Make the inputs.conf file using the vi editor to tell Splunk which file to monitor:
+	
+	vi inputs.conf
+
+Press I to enter insertable mode to add content to the file:
+
+	# Splunk will monitor the file located at /var/sys/syslog on the system's file system:
+	[monitor:///var/sys/syslog]
+	
+	# The stanza or the input is enabled:
+	Disabled = 0
+	
+	# This specifies the index where events from that particular input are stored:
+	Index = static-data
+
+To save this file press the **ESC button** on your keyboard, then type in "**:wq**", then press the **ENTER button** on your keyboard.  
+
 ## Make an outputs.conf File to Tell Splunk Where to Send Data
+
+How outputs.conf should look like:
+
+	[tcpout]
+	defaultGroup=my_indexers
+	[tcpout:my_indexers]
+	server=mysplunk_indexer1:9997
+	[tcpout-server://mysplunk_indexer1:9997
 
 ## Enable Receiving on a Splunk Instance
 

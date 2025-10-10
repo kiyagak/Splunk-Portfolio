@@ -1,8 +1,6 @@
 ## Objective
 
-The goal is to make a new user within Splunk Enterprise that has
-- basic access search and reporting capabilities without advanced or administrative permissions
-- is a data manager that manages lifecycle of data management agents like Edge Processors, including onboarding, monitoring, and updates
+The goal is to make a new user within Splunk Enterprise that has basic access search and reporting capabilities and the ability to manage the lifecycles of data management agents.  
 
 ## Create a New User
 
@@ -56,7 +54,6 @@ Enter a new password for the new user, then click **Save Password**:
 This is how Splunk looks like after logging into the new user account:
 
 <img width="1317" height="674" alt="image" src="https://github.com/user-attachments/assets/3fbfef81-6ff9-4b63-aec4-202e01d32fff" />
-
 
 ## What I Learned
 - How to create a new user in Splunk Enterprise with just the right access to fit the principle of least privilege.

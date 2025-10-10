@@ -66,6 +66,16 @@ Click **Connect** once again:
 
 <img width="1206" height="687" alt="image" src="https://github.com/user-attachments/assets/4f1afe00-1623-4b65-afa8-d2a9cce5dd8c" />
 
+Change to the directory where Ubuntu log files are stored:
+
+	cd /var/log
+
+Run this command to see a detailed view about the log files:
+
+	ls -la
+
+We will monitor the syslog log file located at /var/log/syslog.  
+
 ## Ensure the Splunk service is Running
 
 ## Make an inputs.conf File for Splunk to Choose Log File(s) to Monitor

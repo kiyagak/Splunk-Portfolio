@@ -57,8 +57,8 @@ Create a new index:
 <img width="1108" height="784" alt="image" src="https://github.com/user-attachments/assets/897862b4-f30f-43bb-90ec-c37a0e147e15" />
 
 **Indexes** are the **data repository**. When the Splunk platform indexes raw data, it transforms the data into searchable events. Indexes reside in flat files on the indexer. 
-    • **Events indexes** are the default type of index that can hold any type of data. 
-    • **Metrics indexes** only hold metric data, which consists of a numerical measurement called a metric, the metric type, and one or more dimensions. 
+- **Events indexes** are the default type of index that can hold any type of data. 
+- **Metrics indexes** only hold metric data, which consists of a numerical measurement called a metric, the metric type, and one or more dimensions. 
 
 Choose **Events** as the **Index Data Type** and click **Save**.  
 

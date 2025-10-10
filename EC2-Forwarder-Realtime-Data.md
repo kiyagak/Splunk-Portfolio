@@ -154,7 +154,7 @@ Browse to the Splunk Enterprise web interface and log in using your username and
 
 Click Settings, then click **Forwarding and receiving**:
 
-<img width="1265" height="644" alt="image" src="https://github.com/user-attachments/assets/00ddaa1a-e5eb-42bd-97d4-ecafad156eb0" />
+<img width="1265" height="622" alt="image" src="https://github.com/user-attachments/assets/0197a10f-2a0f-41ea-8056-26bc97dadbc5" />
 
 Click **Configure receiving**:
 

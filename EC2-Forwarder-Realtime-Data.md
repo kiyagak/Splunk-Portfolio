@@ -92,8 +92,13 @@ Make the inputs.conf file using the vi editor to tell Splunk which file to monit
 
 Press I to enter insertable mode to add content to the file:
 
+	# Splunk will monitor the file located at /var/sys/syslog on the system's file system:
 	[monitor:///var/log/syslog]
+	
+	# The stanza or the input is enabled:
 	disabled = 0
+	
+	# This specifies the index where events from that particular input are stored:
 	index = static-data
 
 To save this file press the **ESC button** on your keyboard, then type in "**:wq**", then press the **ENTER button** on your keyboard.  

@@ -164,3 +164,13 @@ You will see the fields in the left pane showing what they have been renamed to:
 
 <img width="1135" height="675" alt="image" src="https://github.com/user-attachments/assets/8f189caa-53d9-429b-b057-84ee0b354346" />
 
+## What I Learned
+
+- The process to add data in Splunk via the Enterprise homepage by selecting the Upload method and choosing the downloaded CSV file.
+- Handling common issues such as the "Failed to parse timestamp" error by setting the timestamp to the current time when the data source lacks a timestamp or uses an incompatible format.
+- Creating a new index in Splunk and understanding the difference between event indexes and metric indexes.
+- How to rename fields from the CSV and pick which ones you want to keep using Splunk’s field extraction tools.
+- When to use delimiter-based field extraction (easy with CSVs) versus regular expressions for more complicated data.
+- The overall flow of going from raw data to searchable fields in Splunk, plus customizing your report to explore all the fields.
+
+This project showed me how to load static CSV data into Splunk and how to change the setup to avoid timestamp errors and get the data ready for searching.  

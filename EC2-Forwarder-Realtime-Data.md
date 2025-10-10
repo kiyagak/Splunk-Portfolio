@@ -18,7 +18,9 @@ Splunk Enterprise has already been installed on another [AWS EC2 Ubuntu instance
 - 4GB of memory
 - 30 GiB of storage data
 
-## Install a Universal Forwarder on This Server 
+## Install a Universal Forwarder on This Server
+
+## Create the Forwarder AWS EC2 Ubuntu Instance
 
 Launch a new instance in AWS by clicking **Launch Instances**:
 

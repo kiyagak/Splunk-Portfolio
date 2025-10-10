@@ -76,8 +76,6 @@ Run this command to see a detailed view about the log files:
 
 We will **monitor the syslog log file** located at /var/log/syslog.  
 
-
-
 ## Ensure the Splunk service is Running
 
 ## Make an inputs.conf File for Splunk to Choose Log File(s) to Monitor
@@ -113,7 +111,26 @@ How outputs.conf should look like:
 	defaultGroup=my_indexers
 	[tcpout:my_indexers]
 	server=mysplunk_indexer1:9997
-	[tcpout-server://mysplunk_indexer1:9997
+
+Make the outputs.conf file using the vi editor to tell Splunk which file to monitor:
+	
+	vi outputs.conf
+
+Press I to enter insertable mode to add content to the file:
+
+	# This stanza defines global settings for the TCP output processor used by Splunk forwarders to send data to receiving Splunk instances.  TCP does not have data loss because it is a reliable protocol compared to UDP:
+	[tcpout]
+	
+	# This stanza specifies the default target group to which the forwarder sends its data automatically:
+	defaultGroup=my_indexers
+	
+	# This stanza picks the target group called "my_indexers." This target group picks one or more receiving indexer servers that the forwarder will send data to via TCP:
+	[tcpout:my_indexers]
+	
+	# This stanza specifies the exact receiving Splunk indexer server that the forwarder will send data to.  Use the public IPv4 address of the first Splunk AWS EC2 Ubuntu instance:
+	server=[the first Splunk EC2 instance's public IPv4 address]:9997
+
+To save this file press the **ESC button** on your keyboard, then type in "**:wq**", then press the **ENTER button** on your keyboard.  
 
 ## Enable Receiving on a Splunk Instance
 

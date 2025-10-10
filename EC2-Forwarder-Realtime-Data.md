@@ -92,7 +92,7 @@ Make the inputs.conf file using the vi editor to tell Splunk which file to monit
 
 Press I to enter insertable mode to add content to the file:
 
-	[monitor:///var/sys/syslog]
+	[monitor:///var/log/syslog]
 	disabled = 0
 	index = static-data
 

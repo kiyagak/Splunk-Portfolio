@@ -129,7 +129,7 @@ Select **Delimiter** as the method because the comma delimits each field or valu
 
 <img width="987" height="667" alt="image" src="https://github.com/user-attachments/assets/47fc695e-9867-43e6-a3ee-4527a341b5ea" />
 
-Choose Comma as the Delimiter:
+Choose **Comma** as the Delimiter:
 
 Field names do not allow periods (.) or dashes (-).  
 

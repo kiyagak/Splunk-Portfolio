@@ -3,8 +3,8 @@ The goal is to make Splunk ingest static data.
 
 ## Download the Data Source
 
-- Download the Organizations CSV with 10000 records from this page: https://www.datablist.com/learn/csv/download-sample-csv-files#organizations-dataset
-- Download link to the CSV file: https://drive.google.com/uc?id=13p-box0F9kou4wE9AyeBNKMSfE767xT-&export=download
+- [The page with sample CSV files for download](https://www.datablist.com/learn/csv/download-sample-csv-files#organizations-dataset)
+- [Download the Organizations CSV file with 10,000 records](https://drive.google.com/uc?id=13p-box0F9kou4wE9AyeBNKMSfE767xT-&export=download)
 
 ## Add Data in Splunk
 

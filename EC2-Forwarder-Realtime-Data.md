@@ -222,9 +222,13 @@ Enter the following search string to verify that the receiver is receiving data 
 
 <img width="1003" height="282" alt="image" src="https://github.com/user-attachments/assets/36cc29f6-d5a3-4848-aa6b-0446b35544e7" />
 
+The receiving Splunk Enterprise instance is receiving data from the Splunk universal forwarding agent:
 
-
+<img width="1341" height="703" alt="image" src="https://github.com/user-attachments/assets/1d777087-1cb6-4985-b3fe-f471eb06cba3" />
 
 # What I Learned
-- Data ingestion can be verified by going to Apps -> Search & Reporting App -> Search <index=<index_name>>
+- Data ingestion can be verified by going to Apps -> Search & Reporting App -> Search
+
+		index="static-data"
+
 - Successful data ingestion is confirmed by seeing data coming in after running the above search

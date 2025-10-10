@@ -26,4 +26,5 @@ Splunk Enterprise has already been installed on another [AWS EC2 Ubuntu instance
 
 
 # What I Learned
-
+- Data ingestion can be verified by going to Apps -> Search & Reporting App -> Search <index=<index_name>>
+- Successful data ingestion is confirmed by seeing data coming in after running the above search

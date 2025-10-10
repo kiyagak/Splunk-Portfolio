@@ -7,6 +7,8 @@ Documentation of my use of Splunk, one of the most popular and widely used SIEM 
 
 [Splunk Enterprise IAM, User Creation, and Roles](https://github.com/kiyagak/Splunk-Portfolio/blob/main/EC2-IAM-Users-Roles.md)
 
+[Splunk Real-Time Data Forwarding](https://github.com/kiyagak/Splunk-Portfolio/blob/main/EC2-Forwarder-Realtime-Data.md)
+
 ## Install Splunk Enterprise on Kali Linux
 Let’s install Splunk Enterprise on Kali Linux, a Debian-based distribution of Linux and log in to access the web interface.  
 

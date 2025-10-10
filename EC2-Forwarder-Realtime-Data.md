@@ -134,6 +134,45 @@ To save this file press the **ESC button** on your keyboard, then type in "**:wq
 
 ## Enable Receiving on a Splunk Instance
 
+Switch to your first Splunk EC2 Ubuntu instance so receiving data from the universal forwarding agent can be enabled.  
+
+Switch to root user:
+
+	sudo su
+
+Change to the Splunk executable directory:
+
+	cd /opt/splunk/bin
+
+Start the Splunk service:
+
+	sudo ./splunk start --accept-license --answer-yes
+
+Browse to the Splunk Enterprise web interface and log in using your username and password.  For example if your Splunk instance's public IPv4 address is 8.8.8.8 you will browse to http://8.8.8.8:8000.  
+
+<img width="864" height="218" alt="image" src="https://github.com/user-attachments/assets/7774aaf3-dc4d-415c-b497-29866bad83cb" />
+
+Click Settings, then click **Forwarding and receiving**:
+
+<img width="1265" height="644" alt="image" src="https://github.com/user-attachments/assets/00ddaa1a-e5eb-42bd-97d4-ecafad156eb0" />
+
+Click **Configure receiving**:
+
+<img width="991" height="492" alt="image" src="https://github.com/user-attachments/assets/1b883e45-e33e-4b57-8cf3-3fe7e16a1e59" />
+
+Click **New Receiving Port**:
+
+<img width="733" height="230" alt="image" src="https://github.com/user-attachments/assets/b6956b31-00a8-43c3-aca2-9f175e5fa38e" />
+
+In the **Listen on this port** field enter **9997**, then click **Save**:
+
+<img width="957" height="400" alt="image" src="https://github.com/user-attachments/assets/22500005-7426-4df6-95ee-7021fd9c6e50" />
+
+The receiving Splunk instance can now receive data by listening on port 9997:
+
+<img width="955" height="314" alt="image" src="https://github.com/user-attachments/assets/8e4cdc5e-a44e-4277-8f2a-4575eaea1ab6" />
+
+
 ## Restart Splunk Service on Forwarder(s)
 
 

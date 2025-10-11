@@ -11,11 +11,26 @@ Splunk, perform basic searches, and continue on your learning journey with our w
 
 #### Module 1 – Intro to Splunk
 - **Splunk components**: [Components of a Splunk Enterprise deployment](https://docs.splunk.com/Documentation/Splunk/9.4.1/Capacity/ComponentsofaSplunkEnterprisedeployment)
+  - **Splunk indexers** provide data processing and storage for local and remote data and host the primary Splunk data store.
+  - A **search head** sends search requests to data-storing indexers and then gathers and shows the combined results. It may or may not store data itself.
+  - **Forwarders** are Splunk instances that send data to remote indexers for processing and storage, typically without indexing the data themselves.
+  - A Splunk server can act as a **deployment server**, sending updates and settings to other Splunk servers and components like forwarders, indexers, and search heads to keep them all synced.
+
+<img width="500" height="394" alt="image" src="https://github.com/user-attachments/assets/10c615bd-17d9-4555-b9d5-6c941d524747" />
+
 - **Basic Splunk functions**: [Get started with Search](https://docs.splunk.com/Documentation/Splunk/latest/Search/GetstartedwithSearch)
+
+<img width="600" height="588" alt="image" src="https://github.com/user-attachments/assets/6a32d870-f2ee-445f-9da0-11c9bbb014dd" />
 
 #### Module 2 – Using Splunk
 - **Define Splunk apps**: [Apps and add-ons](https://docs.splunk.com/Documentation/Splunk/9.3.2/Admin/Whatsanapp)
-- **Understand Splunk user roles**: [About users and roles](https://docs.splunk.com/Documentation/Splunk/9.3.2/Admin/Aboutusersandroles)
+	- An **app** on Splunk analyzes and visualizes specific data sources using dashboards, searches, and management tools. Some apps need add-ons; they can be free or paid. Store apps locally for best performance.
+- **Understand Splunk user roles**, including the pre-defined Splunk Enterprise roles: [About users and roles](https://docs.splunk.com/Documentation/Splunk/9.3.2/Admin/Aboutusersandroles)
+	- admin -- this role has the most capabilities assigned to it.
+    - power -- this role can edit all shared objects (saved searches, etc) and alerts, tag events, and other similar tasks.
+    - user -- this role can create and edit its own saved searches, run searches, edit its own preferences, create and edit event types, and other similar tasks.
+    - can_delete -- This role allows the user to delete by keyword. This capability is necessary when using the delete search operator.
+
 - **Search & Reporting app**: [Search and Reporting app](https://docs.splunk.com/Documentation/Splunk/9.3.3/Admin/Thedefaultapps)
 - **Splunk Web interface**: [Launch Splunk Web](https://docs.splunk.com/Documentation/SplunkCloud/latest/SearchTutorial/StartSplunk)
 

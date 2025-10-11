@@ -9,6 +9,8 @@ This course will introduce you to Splunk's interface and basic searching techniq
 dashboards, and visualizations. By the end of the course, you will be equipped with the foundational skills to navigate
 Splunk, perform basic searches, and continue on your learning journey with our wide offering of educational classes.
 
+In this course, we'll cover what Splunk is and get hands-on with the interface, running searches, and using commands to create reports and dashboards. We'll learn about how knowledge objects can help enrich your data and how to integrate them into your overall workflow.
+
 #### Module 1 – Intro to Splunk
 - **Splunk components**: [Components of a Splunk Enterprise deployment](https://docs.splunk.com/Documentation/Splunk/9.4.1/Capacity/ComponentsofaSplunkEnterprisedeployment)
   - **Splunk indexers** provide data processing and storage for local and remote data and host the primary Splunk data store.

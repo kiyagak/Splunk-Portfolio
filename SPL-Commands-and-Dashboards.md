@@ -18,4 +18,4 @@ Cheat Sheets:
 - [Splunk cheat sheet](https://www.splunk.com/en_us/blog/learn/splunk-cheat-sheet-query-spl-regex-commands.html)
 - [Splunk cheat sheet PDF](https://www.splunk.com/en_us/pdfs/solution-guide/splunk-quick-reference-guide.pdf)
 
-## WHat I Learned
+## What I Learned

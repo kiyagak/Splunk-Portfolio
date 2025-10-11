@@ -32,7 +32,7 @@ Make sure **firewalls ports are open** to **make the Splunk web interface availa
 
 Start Splunk and accept the license and make Splunk automatically answer "yes" to all yes/no prompts during startup:
 
-	sudo ./splunk start --accept-license --answer=yes
+	sudo ./splunk start --accept-license --answer-yes
 
 Enter your administrator username and password when prompted in the Terminal:
 	

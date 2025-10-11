@@ -82,6 +82,13 @@ Splunk, perform basic searches, and continue on your learning journey with our w
 - **Add a report to a dashboard**: [Create and edit reports](https://docs.splunk.com/Documentation/Splunk/latest/Report/Createandeditreports)
 - **Edit a dashboard**: [Edit dashboards](https://docs.splunk.com/Documentation/SplunkCloud/latest/Viz/DashboardEditor)
 
+## Additional Resources
+
+- [Splunk Training & Certification](https://www.splunk.com/en_us/training.html)
+- [Splunk How-To YouTube Channel](https://www.youtube.com/channel/UCjwOFZzLPnji1EstaVyyvAw)
+- [Splunk Documentation](https://docs.splunk.com/Documentation)
+- [Splunk Lantern Customer Success Center](https://lantern.splunk.com/)
+
 ## What I Learned
 
 This course taught me how to find and explore data more easily by running searches with filters and tweaking them to get the info I need. I learned some neat tricks like using wildcards and simple logic (like AND, OR, NOT) to make my searches better. It also showed me how to organize data so it’s easier to understand, plus how to create cool reports and visual charts, and even build dashboards to show everything clearly. Overall, it gave me a solid starting point to dig into data and share what I find in a simple, visual way.

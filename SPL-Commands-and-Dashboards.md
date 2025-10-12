@@ -126,6 +126,13 @@ Filter your search for the top punct value:
 
 <img width="996" height="563" alt="image" src="https://github.com/user-attachments/assets/ae77f31b-429e-43aa-a466-f0fb8db035e4" />
 
+## Transformation Commands
+
+The main transformation commands that transform data are:
+- stats
+- timechart
+- chart
+
 ## Use the stats Command
 
 The [**stats**](https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.0.2503/search-commands/stats) command calculates aggregate statistics, such as average, count, and sum, over the results set just like SQL aggregation does.

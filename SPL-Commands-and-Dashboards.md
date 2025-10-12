@@ -106,6 +106,71 @@ Search data from the last 5 hours, then click the Search icon:
 
 <img width="973" height="701" alt="image" src="https://github.com/user-attachments/assets/a79fbd0e-6808-469f-8c2a-d20e738a5890" />
 
+## Filter Data by Fields
+
+Filter your search for the top pid value:
+- In the left pane click the **pid** field.  
+- Under the Top 10 Values column click the top value, which is **1**.
+
+<img width="887" height="699" alt="image" src="https://github.com/user-attachments/assets/a66a65fc-5a7d-405e-a36a-77e3a16e1618" />
+
+<img width="963" height="595" alt="image" src="https://github.com/user-attachments/assets/25702f46-a3fc-4b4b-9d43-fc608d9a39d6" />
+
+Filter your search for the top punct value:
+- In the left pane click the **punct** field.  
+- Under the Top 10 Values column click the top value, which is
+
+        --::.+:_----_[]:_-.:__.
+
+<img width="887" height="737" alt="image" src="https://github.com/user-attachments/assets/181f4b5a-371c-4ea1-b6a9-84f5d308bcb1" />
+
+<img width="996" height="563" alt="image" src="https://github.com/user-attachments/assets/ae77f31b-429e-43aa-a466-f0fb8db035e4" />
+
+## Use the stats Command
+
+The [**stats**](https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.0.2503/search-commands/stats) command calculates aggregate statistics, such as average, count, and sum, over the results set just like SQL aggregation does.
+
+Search for _interval data:
+
+    index="_internal"
+
+<img width="996" height="861" alt="image" src="https://github.com/user-attachments/assets/22e31c3a-13df-4836-b48b-beddf4798546" />
+
+Choose the name field:
+
+<img width="886" height="894" alt="image" src="https://github.com/user-attachments/assets/df26d6d8-7865-4966-bc78-495a7e5a2073" />
+
+<img width="970" height="358" alt="image" src="https://github.com/user-attachments/assets/c68cfdd0-778c-4d8f-b412-b186ef1b35b6" />
+
+In the search bar enter the following.  Press the SHIFT and ENTER buttons simaltaneously to go to a new line within the search box.  Click **Search** to show each value and how often it is found within that field:
+
+    index="_internal"
+    | stats count by name
+
+<img width="970" height="358" alt="image" src="https://github.com/user-attachments/assets/d8457265-065a-468b-a34b-66a85b0bca55" />
+
+<img width="1016" height="557" alt="image" src="https://github.com/user-attachments/assets/24c441cb-5347-4f0a-82f2-6b4849c1ed35" />
+
+Click on the **Visualization** tab to visualize the seach data:
+
+<img width="1016" height="643" alt="image" src="https://github.com/user-attachments/assets/b8256584-e922-4ba3-8961-4ef30e7b823a" />
+
+Change it to a pie chart:
+
+<img width="1010" height="641" alt="image" src="https://github.com/user-attachments/assets/d0406b82-6fd7-4bd0-b36f-525fb42c50f3" />
+
+<img width="1016" height="608" alt="image" src="https://github.com/user-attachments/assets/c5aa9bb9-03f2-4790-ad25-565dbedabea1" />
+
+Remove the **other** value:
+
+<img width="544" height="291" alt="image" src="https://github.com/user-attachments/assets/6692208e-1aa4-413b-959f-fb8e81c6b6d2" />
+
+Click **Format**, then set **Minimum Size** to **0**.  Press the Enter key on your keyboard:
+
+<img width="720" height="389" alt="image" src="https://github.com/user-attachments/assets/c78c8a32-e7a4-46c7-9d92-707705a2cae9" />
+
+<img width="562" height="305" alt="image" src="https://github.com/user-attachments/assets/c98cdc45-4e49-4c98-977c-3ae816cfbfe8" />
+
 
 ## Notes
 

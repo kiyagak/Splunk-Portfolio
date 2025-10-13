@@ -270,8 +270,6 @@ How to list the bottom or last 10 values of a field:
 
 [Dashboards](https://help.splunk.com/en/splunk-enterprise/get-started/search-tutorial/10.0/part-7-creating-dashboards/about-dashboards) are views that are made up of panels. The panels can contain modules such as search boxes, fields, charts, tables, and lists. Dashboard panels are usually connected to reports. 
 
-A dashboard contains one or more panels. [Dashboard panels](https://help.splunk.com/en/splunk-cloud-platform/create-dashboards-and-reports/simple-xml-dashboards/9.3.2408/build-and-edit-dashboards-in-splunk-web/working-with-dashboard-panels#id_519d4bda_77b8_4b09_a45b_d7c447da85af__Working_with_dashboard_panels) use searches to generate visualizations. Select a panel type depending on the type of search behavior and configuration options that you want. 
-
 Create a **pie chart visualization** that counts the frequency of each **name** field so we can add it to the report:
 - Click the **Search** icon to run your search
 - Click the **Visualization** tab
@@ -317,6 +315,8 @@ Click on **View Dashboard**:
 <img width="1117" height="453" alt="image" src="https://github.com/user-attachments/assets/e0a2ec28-b530-4efe-a421-2514c5292a88" />
 
 ## Add Panels to Your Dashboard
+
+A dashboard contains one or more panels. [Dashboard panels](https://help.splunk.com/en/splunk-cloud-platform/create-dashboards-and-reports/simple-xml-dashboards/9.3.2408/build-and-edit-dashboards-in-splunk-web/working-with-dashboard-panels#id_519d4bda_77b8_4b09_a45b_d7c447da85af__Working_with_dashboard_panels) use searches to generate visualizations. Select a panel type depending on the type of search behavior and configuration options that you want. 
 
 There are two ways to add panels to your dashboard:
 - Within the Dashboard Using the Edit button

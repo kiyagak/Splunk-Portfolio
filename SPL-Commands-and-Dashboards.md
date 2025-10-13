@@ -1,4 +1,4 @@
-## Objectives
+<img width="344" height="274" alt="image" src="https://github.com/user-attachments/assets/3d56dcc6-8da2-4e05-954f-266a3c13547a" />## Objectives
 The goal is to:
 - learn what SPL is
 - what SPL is used for
@@ -262,9 +262,124 @@ How to list the bottom or last 10 values of a field:
 
 <img width="968" height="615" alt="image" src="https://github.com/user-attachments/assets/b41e118b-cbdb-423f-aea1-c0e37a0c1cd3" />
 
+## Dashboards
 
+[Dashboards](https://help.splunk.com/en/splunk-enterprise/get-started/search-tutorial/10.0/part-7-creating-dashboards/about-dashboards) are views that are made up of panels. The panels can contain modules such as search boxes, fields, charts, tables, and lists. Dashboard panels are usually connected to reports. 
 
-## Cheat Sheets
+A dashboard contains one or more panels. [Dashboard panels](https://help.splunk.com/en/splunk-cloud-platform/create-dashboards-and-reports/simple-xml-dashboards/9.3.2408/build-and-edit-dashboards-in-splunk-web/working-with-dashboard-panels#id_519d4bda_77b8_4b09_a45b_d7c447da85af__Working_with_dashboard_panels) use searches to generate visualizations. Select a panel type depending on the type of search behavior and configuration options that you want. 
+
+Create a **pie chart visualization** that counts the frequency of each **name** field so we can add it to the report:
+- Click the **Search** icon to run your search
+- Click the **Visualization** tab
+- Click the **Chart** button
+- Change the visualization to a **pie chart**
+
+	index="_internal"
+	| stats count by name
+
+<img width="1211" height="572" alt="image" src="https://github.com/user-attachments/assets/6e779e5c-fcfd-46a6-9566-476b54d4dfc3" />
+
+Save it as a New Dashboard:
+- Click **Save As**
+- Click **New Dashboard**
+- Close the **Selecting a dashboard type** window by clicking **x**
+
+<img width="946" height="575" alt="image" src="https://github.com/user-attachments/assets/404024aa-e9ca-4416-98f3-5f3408674050" />
+
+<img width="643" height="493" alt="image" src="https://github.com/user-attachments/assets/93bafa4a-8d22-48a2-aa33-82e21533c810" />
+
+The difference between Classic Dashboards and Dashboard Studio:
+- Classic Dashboard
+	- has been developed since Splunk was created
+	- has average visualizations that are less interesting than Dashboard Studio's
+	- returns data in XML format
+	- has a lot of features
+- Dashboard Studio
+	- very new
+	- has the coolest visualizations
+	- returns data in JSON format
+	- has less features
+	- Splunk plans to develop this further and expand its features
+
+Save the panel to your new dashboard using the following settings:
+- Click **Save to Dashboard**
+
+<img width="577" height="718" alt="image" src="https://github.com/user-attachments/assets/61391d51-f889-4df6-a48a-9bfe914f0004" />
+
+Click on **View Dashboard**:
+
+<img width="550" height="226" alt="image" src="https://github.com/user-attachments/assets/35c126d9-5ad8-4254-9ab9-80241b735ee1" />
+
+<img width="1117" height="453" alt="image" src="https://github.com/user-attachments/assets/e0a2ec28-b530-4efe-a421-2514c5292a88" />
+
+## Add Panels to Your Dashboard
+
+There are two ways to add panels to your dashboard:
+- Within the Dashboard Using the Edit button
+- Through Search & Reporting searches
+
+Add panels from the Dashboard Using the Edit button:
+- Click **Edit**
+- Click **Add Panel**
+- Click **New** to expand the chart types
+- Click **Area Chart**
+- Enter the following Sarch String to make a line chart showing sources from the past hour:
+
+		index="_internal"
+		| timechart span=1h count by source
+
+- Click **Add to Dashboard**
+- Click ****
+
+<img width="1124" height="155" alt="image" src="https://github.com/user-attachments/assets/d354974a-10c9-4eae-a07b-1941728046de" />
+
+<img width="401" height="132" alt="image" src="https://github.com/user-attachments/assets/6eaad266-6b80-4dab-8dc2-eb3981c6de61" />
+
+<img width="1268" height="360" alt="image" src="https://github.com/user-attachments/assets/d27cd5e5-8bd3-4ac6-83cc-30797a0fc020" />
+
+<img width="956" height="827" alt="image" src="https://github.com/user-attachments/assets/1121d8ff-6681-47b0-ae83-e346ee1c1738" />
+
+Add Panels to Dashboard Using Search & Reporting:
+- Click **Apps**
+- Click **Search & Reporting**
+- Enter the following search in the search bar
+
+		index="_internal"
+		| chart count over log_level by host
+
+- Click the **Search** button
+- Click **Save As*
+- Click **Existing Dashboard**
+- Click the **Select an Existing Dashboard** drop-down
+- Choose the dashboard that was created earlier
+- Click **Save to Dashboard**
+- Click **View Dashboard**
+
+<img width="344" height="274" alt="image" src="https://github.com/user-attachments/assets/c3428275-f982-4174-bb04-32bc90b7204e" />
+
+<img width="962" height="547" alt="image" src="https://github.com/user-attachments/assets/3d3f69bd-9de3-41f9-bdfd-6daf216579b3" />
+
+<img width="551" height="504" alt="image" src="https://github.com/user-attachments/assets/611461aa-ebce-43d3-93d3-5c401f68303a" />
+
+<img width="391" height="500" alt="image" src="https://github.com/user-attachments/assets/0f33ed78-7657-47b3-95d4-89cda572ffa7" />
+
+<img width="550" height="226" alt="image" src="https://github.com/user-attachments/assets/dcc06ae7-77aa-4f40-aa13-dfd2a83623d8" />
+
+<img width="964" height="926" alt="image" src="https://github.com/user-attachments/assets/6deefec5-4282-4605-b4a1-ec2b04b91726" />
+
+To resize and move panel(s):
+- Click **Edit**
+- Move a panel by clicking and dragging it
+- Resize a panel by clicking and dragging its side, top, or bottom
+- Click **Save**
+
+<img width="957" height="922" alt="image" src="https://github.com/user-attachments/assets/932b17dc-3777-4ff2-9dda-1b7c48e875f7" />
+
+<img width="967" height="157" alt="image" src="https://github.com/user-attachments/assets/65726832-cdff-4076-b323-66376b4f0ddc" />
+
+<img width="982" height="762" alt="image" src="https://github.com/user-attachments/assets/eb095821-edc0-4885-a3d8-0e8334435a41" />
+
+## Splunk Processing Language (SPL) Cheat Sheets
 - [Create your own search query](http://gosplunk.com)
 - [Splunk cheat sheet](https://www.splunk.com/en_us/blog/learn/splunk-cheat-sheet-query-spl-regex-commands.html)
 - [Splunk cheat sheet PDF](https://www.splunk.com/en_us/pdfs/solution-guide/splunk-quick-reference-guide.pdf)

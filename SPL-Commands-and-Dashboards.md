@@ -178,14 +178,93 @@ Click **Format**, then set **Minimum Size** to **0**.  Press the Enter key on yo
 
 <img width="562" height="305" alt="image" src="https://github.com/user-attachments/assets/c98cdc45-4e49-4c98-977c-3ae816cfbfe8" />
 
+How to sort stats command data in ascending order:
 
-## Notes
+    index="_internal"
+    | stats count by name
+    | sort count
 
-Difference between chart and timechart:
-- chart = 2 fields on X & Y
-- timechart = 1 field on Y axis, time on X axis
+<img width="961" height="602" alt="image" src="https://github.com/user-attachments/assets/ee0e3233-cbc9-4958-9642-04a1ae098d70" />
 
-Cheat Sheets:
+How to sort stats command data in descending order:
+
+    index="_internal"
+    | stats count by name
+    | sort - count
+    
+<img width="961" height="522" alt="image" src="https://github.com/user-attachments/assets/ab00f694-d055-4637-9502-9fe26ea44f73" />
+
+How to rename the fields output by the stats command data:
+
+	index="_internal"
+	| stats count by name
+	| sort - count
+	| rename name as "Values of Name" count as "Number of Logs"
+
+<img width="961" height="615" alt="image" src="https://github.com/user-attachments/assets/90b7bd61-b93b-4824-b217-4972cceb5513" />
+
+## Differences Between the chart and timechart Commands
+
+Use cases for timechart and chart commands:
+- timechart:
+    - Used for automatic, easy aggregation and visualization of event counts or metrics over time intervals.
+    - It has one field on the Y axis
+    - It has time on the X axis
+- chart:
+    - Used to aggregate and group by non-time fields or need a generic summary table without automatic time bucketing.
+    - It has two fields on an X and Y axis.  
+
+## Use the timechart Command
+
+[**timechart**](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/9.4/search-commands/timechart) is a search command that creates a time series chart with corresponding table of statistics.  By default i lists out the top 10 values of a field separated by 30 minute segments:  
+
+    index="_internal"
+    | timechart count by source
+
+<img width="1202" height="647" alt="image" src="https://github.com/user-attachments/assets/474e8e46-888b-447a-9263-ffd7c37396de" />
+
+Edit the timespan of each time block to be one hour:
+
+	index="_internal"
+	| timechart span=1h count by source
+
+<img width="1202" height="647" alt="image" src="https://github.com/user-attachments/assets/db699a4e-ec6b-489e-8c95-f65802791177" />
+
+Visualize the time chart:
+- Click the **Visualization** tab.
+- Click the **Chart** button.
+- Choose a **Line Chart** or **Area Chart**.
+
+<img width="1202" height="622" alt="image" src="https://github.com/user-attachments/assets/b9e7c503-95bd-469e-911b-23134d15e6bc" />
+
+<img width="1195" height="552" alt="image" src="https://github.com/user-attachments/assets/10e978ca-2c6e-47ff-8143-abf3b2d87a87" />
+
+How to use the timechart command with multiple fields.  Click on the **Statistics** tab after entering the query:
+
+	index="_internal"
+	| chart count over log_level by host
+
+<img width="968" height="552" alt="image" src="https://github.com/user-attachments/assets/84d6b141-e669-4785-b3ad-78afd24941a2" />
+
+## List the Top & Bottom 10 Values of a Field
+
+How to list the top 10 values of a field:
+
+	index="_internal"
+	| top name
+
+<img width="968" height="615" alt="image" src="https://github.com/user-attachments/assets/c7879803-f46c-4019-8e54-06961f84911a" />
+
+How to list the bottom or last 10 values of a field:
+
+	index="_internal"
+	| rare name
+
+<img width="968" height="615" alt="image" src="https://github.com/user-attachments/assets/b41e118b-cbdb-423f-aea1-c0e37a0c1cd3" />
+
+
+
+## Cheat Sheets
 - [Create your own search query](http://gosplunk.com)
 - [Splunk cheat sheet](https://www.splunk.com/en_us/blog/learn/splunk-cheat-sheet-query-spl-regex-commands.html)
 - [Splunk cheat sheet PDF](https://www.splunk.com/en_us/pdfs/solution-guide/splunk-quick-reference-guide.pdf)

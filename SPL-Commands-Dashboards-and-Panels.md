@@ -276,8 +276,8 @@ Create a **pie chart visualization** that counts the frequency of each **name** 
 - Click the **Chart** button
 - Change the visualization to a **pie chart**
 
-	index="_internal"
-	| stats count by name
+		index="_internal"
+		| stats count by name
 
 <img width="1211" height="572" alt="image" src="https://github.com/user-attachments/assets/6e779e5c-fcfd-46a6-9566-476b54d4dfc3" />
 

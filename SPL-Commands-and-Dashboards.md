@@ -1,4 +1,5 @@
-<img width="344" height="274" alt="image" src="https://github.com/user-attachments/assets/3d56dcc6-8da2-4e05-954f-266a3c13547a" />## Objectives
+## Objectives
+
 The goal is to:
 - learn what SPL is
 - what SPL is used for
@@ -6,6 +7,10 @@ The goal is to:
 -learn about dashboards
 - creating dashboards
 - adding panels to existing dashboards
+
+## What is SPL?
+
+[SPL](https://docs.splunk.com/Splexicon:SPL) is the abbreviation for the Splunk Search Processing Language. The Search Processing Language is a set of commands that you use to search your data. 
 
 ## Filter Data for Date & Time Through the GUI
 
@@ -78,7 +83,6 @@ To view data in an advanced way that shows data between the last 2 days and 15 m
 - In the **Latest** field enter **-15m@m**
 
 <img width="936" height="501" alt="image" src="https://github.com/user-attachments/assets/7677689a-4755-4f6c-afe0-6a020e967e80" />
-
 
 ## Filter Data for Date & Time Through SPL Search Parameters
 
@@ -212,7 +216,7 @@ Use cases for timechart and chart commands:
     - It has time on the X axis
 - chart:
     - Used to aggregate and group by non-time fields or need a generic summary table without automatic time bucketing.
-    - It has two fields on an X and Y axis.  
+    - It has two fields, each on an X and Y axis.  
 
 ## Use the timechart Command
 
@@ -385,3 +389,32 @@ To resize and move panel(s):
 - [Splunk cheat sheet PDF](https://www.splunk.com/en_us/pdfs/solution-guide/splunk-quick-reference-guide.pdf)
 
 ## What I Learned
+
+I learned a lot of things in this project:
+- how to search for data using SPL parameters
+- how to filter data by date & time and transformation commands
+	- by date and time through 
+		- the GUI
+		- SPL Searches
+	- by field
+- how to use transformation commands such as
+	- stats, used for data aggregation of statistics, similar to SQL aggregation
+	- timechart
+		- which differs from the chart field by 
+			- having one field on the Y axis
+			- and another time field on the X axis
+	- chart
+		- which differs from timechart by having two fields, each on an X and Y axis
+- using SPL to list a field's top & bottom 10 values
+- how to create dashboards to visualize various search data
+- how to add, resize, and move panels that are part of a dashboard
+- the difference between Classic Dashboards and Dashboard Studio, mainly
+	- development time: 
+		- Classic Dashboard was around since the creation of Splunk
+		- Dashboard Studio is relatively new in comparison
+	- Dashboard Studio having cooler visualizations than Classic Dashboards
+	- returned data:
+		- Classic Dashboard returns XML data
+		- Dashboard Studio returns JSON data
+	- Classic Dashboard having more features than Dashboard Studio
+	- that Splunk plans to further develop Dashboard Studio and expand its features

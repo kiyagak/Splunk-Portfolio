@@ -71,7 +71,7 @@ To view data from a date and time range, where time is formatted in **HH:MM:SS.S
 To view data in an advanced way that shows data from the last 24 hours
 - click the **Time range** button
 - click **Advanced**
-- In the **Earliest** field enter **-24h@h******
+- In the **Earliest** field enter **-24h@h**
 - In the **Latest** field enter **now**
 
 <img width="936" height="495" alt="image" src="https://github.com/user-attachments/assets/23aa73f2-1b7d-4b0f-a300-cdce8d5d0048" />
@@ -79,7 +79,7 @@ To view data in an advanced way that shows data from the last 24 hours
 To view data in an advanced way that shows data between the last 2 days and 15 minutes ago
 - click the **Time range** button
 - click **Advanced**
-- In the **Earliest** field enter **-2d@d******
+- In the **Earliest** field enter **-2d@d**
 - In the **Latest** field enter **-15m@m**
 
 <img width="936" height="501" alt="image" src="https://github.com/user-attachments/assets/7677689a-4755-4f6c-afe0-6a020e967e80" />
@@ -333,7 +333,7 @@ Add panels from the Dashboard Using the Edit button:
 		| timechart span=1h count by source
 
 - Click **Add to Dashboard**
-- Click ****
+- Click **Save**
 
 <img width="1124" height="155" alt="image" src="https://github.com/user-attachments/assets/d354974a-10c9-4eae-a07b-1941728046de" />
 

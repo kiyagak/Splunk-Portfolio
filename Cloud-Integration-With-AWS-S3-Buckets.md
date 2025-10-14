@@ -95,7 +95,7 @@ Create your access key:
 
 we will ingest data from static-data index and not from AWS
 
-<img width="916" height="224" alt="image" src="https://github.com/user-attachments/assets/795f4a9d-1381-4383-9448-18df6726d6bd" />
+<img width="910" height="327" alt="image" src="https://github.com/user-attachments/assets/86e35912-0fbe-4864-b57f-c4bccf52322f" />
 
 <img width="945" height="92" alt="image" src="https://github.com/user-attachments/assets/11ad7831-8666-418e-866b-9c4081d2644e" />
 

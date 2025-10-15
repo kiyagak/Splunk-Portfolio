@@ -2,9 +2,9 @@
 
 The goal is to get AWS S3 data into the Splunk web interface using the following steps:
 
-- how to make an AWS S3 Bucket that will store our static file that will be ingested into Splunk
-- allow the AWS S3 bucket data to be fed into Splunk
-- search specifically for S3 bucket data within Splunk once ingested
+- making an AWS S3 bucket datastore for a static file that will be ingested into Splunk
+- give the AWS S3 bucket datastore access to feed data into Splunk
+- search specifically for AWS S3 bucket datastore data within Splunk once ingested
 
 ## Splunk Max File Size of Ingested Files
 

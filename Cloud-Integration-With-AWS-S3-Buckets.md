@@ -14,34 +14,14 @@ The goal is to get AWS S3 data using the following steps:
 - Verify inputs has been created.
 - Upload any csv file on s3 bucket.
 
-## Notes
+## Splunk Max File Size of Ingested Files
 
-friend A needs to get parsel or champagne from friend B's house
-
-they need
-    address 
-    access to house via key or biometrics
-once they have these 2 things they can get the parsel/champagne bottle
-    
-    
-for Splunk to pull data from S3 bucket it needs
-    address tells Splunk where to fetch data = AWS cloud platform
-    a key gives Splunk access to go inside AWS and fetch the data from S3 bucket
-        S3 bucket works as storage drive
-        
-why not ingest data directly?
-    putting in a drive one after another will make Splunk ingesting or pull it from AWS
-
-cant ingest data for a file exceeding 500MB
-only files/data at a max file size of 500MB can be ingested
+Splunk can only ingest files or data with a maximum file size of 500MB. 
 
 ## Create an AWS S3 Bucket
 
 - Access your [AWS console](https://console.aws.amazon.com):
 - Search "S3" in the search bar
-
-      S3
-
 - Click **S3**
 - Click **Create Bucket**
 
@@ -86,14 +66,14 @@ Create your access key:
 
 ## Create a New Index
 
+We will ingest data from the **static-data** index instead of AWS with these steps:
+
 - Log into Splunk Enterprise web interface using your admin username and password
 - Click **Settings**
 - Click **Indexes**
 - Click **New Index**
 - Name it as aws-data
 - Click **Save**
-
-we will ingest data from static-data index and not from AWS
 
 <img width="910" height="327" alt="image" src="https://github.com/user-attachments/assets/86e35912-0fbe-4864-b57f-c4bccf52322f" />
 
@@ -121,4 +101,81 @@ we will ingest data from static-data index and not from AWS
 
 <img width="685" height="306" alt="image" src="https://github.com/user-attachments/assets/d4c4200b-b552-4016-9cf7-7c2b0a65eed3" />
 
+## Give Splunk Access to AWS
+
+Add an account with the AWS credentials or access key
+- Click **Done**
+- Click **Open App**
+- Click **Configuration**
+- Click **Add**
+- Name the account, such AWS-Splunk
+- Enter the **key ID** generated in AWS
+- Enter the **secret key** generated in AWS
+- Click **Add**
+
+<img width="942" height="323" alt="image" src="https://github.com/user-attachments/assets/90dc2661-9c18-42a9-944c-fb13fcec1b5d" />
+
+<img width="798" height="439" alt="image" src="https://github.com/user-attachments/assets/91db7819-6d29-4b65-8149-278ca72c8219" />
+
+<img width="942" height="323" alt="image" src="https://github.com/user-attachments/assets/2905309f-fd54-4c07-a100-b65bba6de99a" />
+
+## Tell Splunk Where to Get the Data From
+
+Tell Splunk where to pull the data from AWS S3 bucket using application-based input:
+
+- Click **Inputs**
+- Click **Create New Input**
+- Click **Custom Data Type**
+- Click **Generic S3**
+- Name the input **s3-data-pulling**
+- Select the AWS account you connected to Splunk
+- Select **bootcamp-bucket-aws** as your S3 bucket
+- Select **static-data** as your Index
+- Click **Add**
+
+<img width="955" height="650" alt="image" src="https://github.com/user-attachments/assets/cdfa2000-b3ff-44d6-8092-83a0efa24724" />
+
+<img width="213" height="263" alt="image" src="https://github.com/user-attachments/assets/be565628-b6f2-44e0-b2fa-abc6e0c644fb" />
+
+<img width="949" height="993" alt="image" src="https://github.com/user-attachments/assets/9f2742fc-97a8-478b-a3a9-8f9c46d487e7" />
+
+Upload a file into the AWS S3 bucket:
+- At the top in the search bar search "S3"
+- click **S3**
+- find the **bootcamp-bucket-aws** bucket
+- Click **Upload**
+- Click **Add files**
+- Add the leads-10000.csv file
+- Check the checkbox for the uploaded file
+- Click **Upload**
+
+<img width="660" height="179" alt="image" src="https://github.com/user-attachments/assets/9d989f34-7a14-4f5e-b0c8-23e55f844099" />
+
+<img width="653" height="389" alt="image" src="https://github.com/user-attachments/assets/328408b7-91e2-49c3-88db-d71a8ae96bc4" />
+
+<img width="653" height="431" alt="image" src="https://github.com/user-attachments/assets/b4241342-c111-4dc3-b6b3-3e1830875c9e" />
+
+<img width="589" height="547" alt="image" src="https://github.com/user-attachments/assets/b9e41936-fa49-4be6-8978-f46ff9c8fc67" />
+
+<img width="1192" height="803" alt="image" src="https://github.com/user-attachments/assets/083eb06b-9391-41b4-b3b6-df763d1b00c8" />
+
+Verify that Splunk ingested the S3 bucket data:
+- Check in Splunk to see if the data is being ingested or not
+- Click **Apps**
+- Click **Search & Reporting**
+- Search the following to get data from the CSV file that was uploaded to the S3 bucket
+
+      index="static-data" source="s3://bootcamp-bucket-aws/leads-10000.csv"
+
+- Click the Search icon to show that Splunk ingested the S3 bucket data
+
+<img width="342" height="301" alt="image" src="https://github.com/user-attachments/assets/a6b361d7-37b8-422d-8665-bf8bd80963fe" />
+
+<img width="959" height="917" alt="image" src="https://github.com/user-attachments/assets/7b3a52ae-de46-49e2-9652-4213c49fb1d2" />
+
 ## What I Learned
+
+I learned three key things from this project:
+- how to make an AWS S3 Bucket that will store our static leads-10000.csv file that will be ingested into Splunk
+- create access keys and secret keys to grant Splunk access to AWS to allow the AWS S3 bucket data to be fed into Splunk
+- how to search specifically for S3 bucket data within Splunk

@@ -131,6 +131,11 @@ Tell Splunk where to pull the data from AWS S3 bucket using application-based in
 
 <img width="949" height="993" alt="image" src="https://github.com/user-attachments/assets/9f2742fc-97a8-478b-a3a9-8f9c46d487e7" />
 
+Download the **leads-10000.csv** file from this page: 
+- https://www.datablist.com/learn/csv/download-sample-csv-files#leads-dataset
+
+<img width="840" height="486" alt="image" src="https://github.com/user-attachments/assets/6f8157cc-ddb9-4cfa-b360-652980494bfe" />
+
 Upload a file into the AWS S3 bucket:
 - At the top in the search bar search "S3"
 - click **S3**

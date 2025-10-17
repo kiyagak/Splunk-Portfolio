@@ -13,6 +13,8 @@ Documentation of my use of Splunk, one of the most popular and widely used SIEM 
 
 [Cloud Integration with AWS S3 Buckets](https://github.com/kiyagak/Splunk-Portfolio/blob/main/Cloud-Integration-With-AWS-S3-Buckets.md)
 
+[Intro to Splunk eLearning Notes](https://github.com/kiyagak/Splunk-Portfolio/blob/main/Notes-Intro-to-Splunk-eLearning.md)
+
 ## Install Splunk Enterprise on Kali Linux
 Let’s install Splunk Enterprise on Kali Linux, a Debian-based distribution of Linux and log in to access the web interface.  
 

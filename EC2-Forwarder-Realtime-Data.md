@@ -232,8 +232,8 @@ The receiving Splunk Enterprise instance is receiving data from the Splunk unive
 <img width="1341" height="703" alt="image" src="https://github.com/user-attachments/assets/1d777087-1cb6-4985-b3fe-f471eb06cba3" />
 
 # What I Learned
-- Data ingestion can be verified by going to Apps -> Search & Reporting App -> Search
-
-		index="static-data"
-
-- Successful data ingestion is confirmed by seeing data coming in after running the above search
+I learned how to 
+- create an AWS EC2 Ubuntu Splunk instance that forwards data to a receiver Splunk insance
+- tell Splunk what data to forward to the receiver using the inputs.conf file
+- tell Splunk where to send forwarded data, in this case, our receiver Splunk instance
+- and how to verify that the Splunk receiver instance is receiving forwarded data

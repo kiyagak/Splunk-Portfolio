@@ -1,4 +1,4 @@
-# Splunk eLearning Course Notes Summary
+# Intro to Splunk eLearning Course Notes
 
 ## Objective
 

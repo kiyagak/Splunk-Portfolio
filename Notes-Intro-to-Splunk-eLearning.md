@@ -2,13 +2,13 @@
 
 ## Objective
 
-The goal is to list notes taken from the Intro to Splunk eLearning course:
-*   Exploring Splunk Web
-*   Running searches
-*   Using commands
-*   Creating reports
-*   Creating dashboards
-*   Understanding knowledge objects
+The goal is to:
+*   Explore Splunk Web
+*   Run searches
+*   Use search commands
+*   Create reports
+*   Create dashboards
+*   Understand knowledge objects
 
 ## What is Splunk?
 

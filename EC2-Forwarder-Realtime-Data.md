@@ -1,6 +1,6 @@
 ## Objectives
 The goals are to:
-- have a Splunk package installed on another server
+- have a Splunk package installed on another receiving server
 - install a universal forwarder on this server and ensure the Splunk service is running
 - make a inputs.conf file to monitor log files to tell Splunk what file to monitor
 - make an outputs.conf file to help Splunk know where to send data

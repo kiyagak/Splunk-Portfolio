@@ -193,6 +193,7 @@ The goal is to list notes taken from the Intro to Splunk eLearning course:
 
 ## What I Learned
 
+I learned that
 - Splunk is a platform that collects and indexes machine data for search, analysis, and visualization.
 - It offers a web interface with apps and user roles. 
 - Searches use keywords, commands (|), and filters, returning results quickly when limited by time.

@@ -1,3 +1,5 @@
+# Splunk eLearning Course Notes Summary
+
 ## Objective
 
 The goal is to list notes taken from the Intro to Splunk eLearning course:
@@ -7,8 +9,6 @@ The goal is to list notes taken from the Intro to Splunk eLearning course:
 *   Creating reports
 *   Creating dashboards
 *   Understanding knowledge objects
-
-# Splunk eLearning Course Notes Summary
 
 ## What is Splunk?
 
@@ -190,4 +190,12 @@ The goal is to list notes taken from the Intro to Splunk eLearning course:
     *   search
 *   **Which search mode behaves differently depending on the type of search being run?**
     *   Smart
+
 ## What I Learned
+
+- Splunk is a platform that collects and indexes machine data for search, analysis, and visualization.
+- It offers a web interface with apps and user roles. 
+- Searches use keywords, commands (|), and filters, returning results quickly when limited by time.
+- Knowledge objects organize data for reuse.
+- Reports and dashboards visualize insights and can be scheduled or customized.
+- Dashboard Studio enables easy, flexible dashboard building.

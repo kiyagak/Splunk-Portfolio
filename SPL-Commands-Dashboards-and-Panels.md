@@ -377,7 +377,7 @@ To resize and move panel(s):
 - Resize a panel by clicking and dragging its side, top, or bottom
 - Click **Save**
 
-<img width="957" height="922" alt="image" src="https://github.com/user-attachments/assets/932b17dc-3777-4ff2-9dda-1b7c48e875f7" />
+<img width="957" height="922" alt="image" src="https://github.com/user-attachments/assets/a4eedbd0-7fbd-4158-a650-6d06bb744ac3" />
 
 <img width="967" height="157" alt="image" src="https://github.com/user-attachments/assets/65726832-cdff-4076-b323-66376b4f0ddc" />
 
